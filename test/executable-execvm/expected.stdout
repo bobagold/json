@@ -11,3 +11,5 @@
 [{"name":"Trent Mick"},{"name":"Andrew Dlugan"}]
 
 SyntaxError: Unexpected identifier
+
+Error: Script execution timed out.

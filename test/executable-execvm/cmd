@@ -29,3 +29,6 @@ echo '[{"first":"Trent","last":"Mick"},{"first":"Andrew","last":"Dlugan"}]' \
 echo ''
 echo '{"foo": "bar"}' | $JSON -e 'foo foo' 2>&1 | grep SyntaxError
 #    SyntaxError: Unexpected identifier
+echo ''
+echo '{}' | $JSON -e 'while (1) {}' 2>&1 | grep Error:
+#    Error: Script execution timed out.
